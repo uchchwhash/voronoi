@@ -12,7 +12,7 @@ from itertools import ifilter, takewhile
 
 import numpy
 from numpy import tan, sqrt, arctan2, arctan
-from numpy import sin, cos
+from numpy import sin, cos, array
 from numpy import linalg
 import scipy.spatial
 
@@ -67,7 +67,7 @@ def random_points(N, condition=None):
     else:
         indexed_points = enumerate(ifilter(condition, stream()))
 
-    points = list(takewhile(lambda i, point: i < N, indexed_points))
+    points = list(takewhile(lambda (i, point): i < N, indexed_points))
     return (numpy.array([theta for _, (theta, _) in points]),
             numpy.array([phi for _, (_, phi) in points]))
 
