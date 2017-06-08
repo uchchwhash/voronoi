@@ -8,7 +8,7 @@ MIT
 
 * Requirements
 - [[https://www.scipy.org/][SciPy]]
-- [[http://www.numpy.org/][NumPy]
+- [[http://www.numpy.org/][NumPy]]
 - [[http://jupyter.org/][Jupyter]]
 
 * Documentation
@@ -30,4 +30,4 @@ in /International Symposium on Experimental Algorithms/, 462-473, Springer.
 
 Note that an implementation of Caroli /et al./ (2010) recently landed in SciPy 0.18.0.
 This project preceeds that with a simpler algorithm which is perhaps a bit slower and
-a bit less numerically stable.
+a bit less numerically stable but definitely easier to understand.
